@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(192, 192, 192);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.maincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 500px;
+    height: 500px;
+    border: 25px solid rgb(0, 0, 0);
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.blue{
+    background-color: blue;
+    width: calc(50% - 25px);
+    height: calc(50% - 25px);
+    box-sizing: border-box;
+    position: relative;
+    border-top-right-radius: 100%;
+}
+
+.blue:hover{
+    background-color: rgb(0, 0, 167);
+    cursor: pointer;
+}
+
+.red{
+    background-color: red;
+    width: calc(50% - 25px);
+    height: calc(50% - 25px);
+    box-sizing: border-box;
+    position: relative;
+    border-bottom-left-radius: 100%;
+}
+
+.red:hover{
+    background-color: rgb(160, 0, 0);
+    cursor: pointer;
+}
+
+.yellow{
+    background-color: yellow;
+    width: calc(50% - 25px);
+    height: calc(50% - 25px);
+    box-sizing: border-box;
+    position: relative;
+    border-top-left-radius: 100%;
+}
+
+.yellow:hover{
+    background-color: rgb(199, 199, 0);
+    cursor: pointer;
+}
+
+.green{
+    background-color: green;
+    width: calc(50% - 25px);
+    height: calc(50% - 25px);
+    box-sizing: border-box;
+    position: relative;
+    border-bottom-right-radius: 100%;
+}
+
+.green:hover{
+    background-color: rgb(0, 110, 0);
+    cursor: pointer;
+}
+
+.center{
+    width: 200px;
+    height: 200px;
+    border: 25px solid black;
+    background-color: #222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+#start{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    margin-top: 10px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+#start:hover{
+    transition: all .3s ease;
+    background-color: #222;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
